@@ -15,5 +15,5 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
 			super.countIn(in);
 	}
 }
-//zle 5 i 12-15 wiersz
-//alt +  sztzlaki w bok presuwaja sie po otwartych plikach
+//zle byly 5 i 12-15
+//klawisze alt + strzalki w bok poruszaja sie po otwartych kartach
