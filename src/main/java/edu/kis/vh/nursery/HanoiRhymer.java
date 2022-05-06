@@ -1,17 +1,31 @@
 package edu.kis.vh.nursery;
 
-public class HanoiRhymer extends defaultCountingOutRhymer {
 
-int totalRejected = 0;
+/**
+ * Checks rejected rhymes
+ */
+public class HanoiRhymer extends DefaultCountingOutRhymer {
 
-	public int reportRejected() {
+	private int totalRejected = 0;
+
+	/**
+	 * @return total current sum of rejected rhymers
+	 */
+	int reportRejected() {
 		return totalRejected;
 	}
 
+
+	/**
+	 * @param in is written to the current array index of the class DefaultCountingOutRhymer
+	 */
+	@Override
 	public void countIn(int in) {
-	if (!callCheck() && in > peekaboo())
+		if (!callCheck() && in > peekaboo())
 			totalRejected++;
-			else
-				super.countIn(in);
+		else
+			super.countIn(in);
 	}
 }
+//zle byly 5 i 12-15
+//klawisze alt + strzalki w bok poruszaja sie po otwartych kartach
