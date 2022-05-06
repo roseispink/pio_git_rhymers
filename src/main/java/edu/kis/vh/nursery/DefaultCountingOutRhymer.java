@@ -2,8 +2,6 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-
-
 	public static final int IS_EMPTY = -1;
 	public static final int CAPACITY = 12;
 	public static final int IS_FULL = CAPACITY - 1;
